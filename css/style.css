@@ -1,0 +1,258 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    /* Colors */
+    --main-color: #ff702a;
+    --text-color: #fff;
+    --bg-color: #1e1c2a;
+    
+    /* Fonts */
+    --big-font: 5rem;
+    --h2-font: 2.25rem;
+    --p-font: 0.9rem;
+}
+
+*::selection {
+    color: var(--text-color);
+    background: var(--main-color);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+section {
+    padding: 70px 17%;
+}
+
+/* Header START */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 170px;
+    background: var(--bg-color);
+}
+
+a.logo {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    transition: .4s;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Header END */
+
+/* Home START */
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.home-img img {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    color: var(--main-color);
+}
+
+.home-text h2 {
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--text-color);
+    background: var(--main-color);
+    border-radius: .5rem;
+    transition: all .4s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.2) translateY(10px);
+}
+
+/* Home END */
+
+/* About START */
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+.about-img img {
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+
+.about-text span {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+}
+
+.about-text p {
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+}
+
+/* About END */
+
+/* Menu START */
+
+.heading {
+    text-align: center;;
+}
+
+.heading span {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.heading h2 {
+    font-size: var(--h2-font);
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    background: #feeee7;
+    padding: 20px;
+    border-radius: .5rem;
+}
+
+.box-img {
+    width: 220px;
+    height: 220px;
+}
+
+.box-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.box h2 {
+    font-size: 1.3rem;
+    color: var(--bg-color);
+}
+
+.box h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--bg-color);
+    margin: 4px 0 10px;
+}
+
+.box span {
+    font-size: var(--p-font);
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.box .bx {
+    font-size: 20px;
+    background: var(--main-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 7px 10px;
+    border-radius: 0 0.5rem 0 0.5rem;
+}
+
+/* Menu END */
+
+/* Service START */
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.s-box {
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.s-box img {
+    width: 90px;
+}
+
+.s-box h3 {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin: 4px 0 10px;
+}
+
+.s-box p {
+    line-height: 1.7;
+}
+
+/* Service END */
